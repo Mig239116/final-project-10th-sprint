@@ -7,7 +7,7 @@ cd task
 touch dir2/empty
 
 echo "#!/bin/bash" > dir2/hello.sh
-echo 'echo "$1, hello"' >> dir2/hello.sh
+echo 'echo "$1, привет"' >> dir2/hello.sh
 
 chmod 764 dir2/hello.sh
 
@@ -18,15 +18,15 @@ cp -r dir2/* dir3/dir4
 find . -name  "*.txt" > dir1/summary.txt
 cat dir2/list.txt >> dir1/summary.txt
 
-export NAME="All students"
+export NAME="Всем студентам"
 
 ./dir2/hello.sh "$NAME" >> dir1/summary.txt
 
-mv dir1/summary.txt "Practical task"
+mv dir1/summary.txt "Практическое задание"
 
-cat "Practical task"
+cat "Практическое задание"
 
-grep  "dir" "Practical task" | sort
+grep  "dir" "Практическое задание" | sort
 
 cd ..
 
